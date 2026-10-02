@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Slayer Interactive Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <h1>Demon Slayer Character Gallery</h1>
+
+  <!-- Display box required by the assignment -->
+  <div id="image">
+    Hover over an image below to display here.
+  </div>
+
+  <!-- Thumbnails with inline event listeners -->
+  <div class="gallery">
+    <img 
+      class="preview" 
+      alt="Tanjiro Kamado - Water & Sun Breathing Swordsman" 
+      src="https://images.justwatch.com/poster/305539281/s718/season-1" 
+      onmouseover="upDate(this)" 
+      onmouseleave="unDo()"
+    />
+
+    <img 
+      class="preview" 
+      alt="Nezuko Kamado - Demon Maiden of the Bamboo Muzzle" 
+      src="https://m.media-amazon.com/images/I/71I3u7fHQpL._AC_UF894,1000_QL80_.jpg" 
+      onmouseover="upDate(this)" 
+      onmouseleave="unDo()"
+    />
+
+    <img 
+      class="preview" 
+      alt="Kyojuro Rengoku - Flame Hashira" 
+      src="https://m.media-amazon.com/images/I/81MTozXh-8L._AC_UF894,1000_QL80_.jpg" 
+      onmouseover="upDate(this)" 
+      onmouseleave="unDo()"
+    />
+  </div>
+
+</body>
+</html>
